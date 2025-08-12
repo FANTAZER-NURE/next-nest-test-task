@@ -1,6 +1,12 @@
 # Next + Nest Articles App
 
+For your comfort, the app is deployed to my personal VPS, you can access it here: http://161.97.130.21:3000
+
+Backend: http://161.97.130.21:4000
+Swagger: http://161.97.130.21:4000/docs
+
 ## Prerequisites
+
 - Node 20.11.1
 - Yarn 1.x
 
@@ -40,7 +46,6 @@ yarn start
 - Backend listens on `PORT` (default 4000)
 
 ## Structure
-- `frontend/` Next.js app 
-- `backend/` Nest.js app 
 
-
+- `frontend/` Next.js app
+- `backend/` Nest.js app
