@@ -1,0 +1,22 @@
+{
+  "name": "next-nest-test-task",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n BE,FE -c blue,green \"yarn workspace backend start:dev\" \"yarn workspace frontend dev\"",
+    "build": "yarn workspaces run build",
+    "lint": "yarn workspaces run lint || true",
+    "format": "prettier --write .",
+    "start": "concurrently -k -n BE,FE -c blue,green \"yarn workspace backend start:prod\" \"yarn workspace frontend start\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "prettier": "^3.4.2"
+  }
+}
+
+

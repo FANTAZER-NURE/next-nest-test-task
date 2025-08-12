@@ -1,0 +1,16 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 16px;
+  width: 240px;
+  height: 180px;
+  border-radius: 18px;
+}
+
+.link {
+  text-align: left;
+  outline: none;
+}
